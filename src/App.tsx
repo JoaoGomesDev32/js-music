@@ -2,16 +2,18 @@ import React, { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import TrackList from './components/TrackList';
 import Playlist from './components/Playlist';
-import deezerAPI from './api/deezer';
+
 
 const App: React.FC = () => {
   const [tracks, setTracks] = useState<Track[]>([]);
   const [playlist, setPlaylist] = useState<Track[]>([]);
 
-  const handleSearch = async (query: string) => {
+  const handleSearch = async (searchTerm: string) => {
     try {
-      const response = await deezerAPI.get('/search', { params: { q: query } });
-      const fetchedTracks = response.data.data.map((item: DeezerTrack) => ({
+      const response = await fetch(`http://localhost:5000/api/search?q=${encodeURIComponent(searchTerm)}`);
+      const data = await response.json();
+
+      const fetchedTracks = data.data.map((item: DeezerTrack) => ({
         id: item.id,
         title: item.title,
         artist: item.artist.name,
