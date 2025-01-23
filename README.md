@@ -1,50 +1,83 @@
-# React + TypeScript + Vite
+# JS Music - Aplicativo de Playlist
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+![JS Music Logo](path/to/your/logo.png)
 
-Currently, two official plugins are available:
+JS Music é uma aplicação web moderna para criar e gerenciar playlists de música, desenvolvida com React, TypeScript e Vite.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🎵 Características
 
-## Expanding the ESLint configuration
+- 🔍 Pesquisa de músicas em tempo real
+- ➕ Adição fácil de músicas à sua playlist
+- 🗑️ Remoção de músicas da playlist
+- 💾 Salvamento de playlists
+- 🎨 Interface de usuário moderna e responsiva
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+## 🚀 Começando
 
-- Configure the top-level `parserOptions` property like this:
+Estas instruções fornecerão uma cópia do projeto em execução na sua máquina local para fins de desenvolvimento e teste.
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+### Pré-requisitos
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+- Node.js (versão 14.0.0 ou superior)
+- npm (normalmente vem com Node.js)
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+### Instalação
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+1. Clone o repositório:
+- git clone https://github.com/joaogomesdev32/js-music.git
+
+2. Acesse a pasta do projeto:
+- cd js-music
+
+3. Instale as dependências:
+- npm install
+
+4. Inicie o servidor de desenvolvimento:
+- npm run dev
+
+5. Abra [http://localhost:3000](http://localhost:3000) para ver o resultado em seu navegador.
+
+## 🛠️ Construído com
+
+- [React](https://reactjs.org/) - A biblioteca JavaScript para construir interfaces de usuário
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript com sintaxe para tipos
+- [Vite](https://vitejs.dev/) - Ferramenta de construção que visa fornecer uma experiência de desenvolvimento mais rápida
+- [Material-UI](https://mui.com/) - Biblioteca de componentes React para um desenvolvimento mais rápido e fácil
+
+## 📚 Estrutura do Projeto
+
+js-music/
+│
+├── src/
+│   ├── components/
+│   │   ├── SearchBar.tsx
+│   │   ├── TrackList.tsx
+│   │   └── Playlist.tsx
+│   │
+│   ├── App.tsx
+│   └── main.tsx
+│
+├── public/
+│
+├── package.json
+├── tsconfig.json
+├── vite.config.ts
+└── README.md
+
+
+## 🤝 Contribuindo
+
+Contribuições são bem-vindas! Sinta-se à vontade para abrir uma issue ou enviar um pull request.
+
+## 📝 Licença
+
+Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+
+## 👏 Agradecimentos
+
+- Agradecimento à comunidade open-source por todas as ferramentas e bibliotecas incríveis
+- Inspirado por aplicativos de música como Spotify e Apple Music
+
+---
+
+Desenvolvido com ❤️ por [João Silva](https://github.com/joaogomesdev32)

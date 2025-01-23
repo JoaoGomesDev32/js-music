@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './SearchBar.css';
 // import { Box, TextField, Button } from '@mui/material';
 
 interface SearchBarProps {
@@ -14,20 +15,27 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     }
   };
 
+  const handleKeyPress = (e: React.KeyboardEvent<HTMLInputElement>) => {
+    if (e.key === 'Enter') {
+      handleSearch();
+    }
+  };
   return (
-    <div className="d-flex flex-column gap-3">
+    <div className="search-bar">
       <input
         type="text"
-        className="form-control"
+        className="search-input"
         placeholder="Buscar músicas"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
+        onKeyPress={handleKeyPress}
       />
-      <button className="primary" onClick={handleSearch}>
-        Buscar
+      <button className="search-button" onClick={handleSearch}>
+        <i className="fas fa-search"></i>
       </button>
     </div>
   );
 };
+
 
 export default SearchBar;

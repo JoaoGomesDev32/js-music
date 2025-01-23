@@ -1,0 +1,101 @@
+.playlist {
+    margin-top: 2rem;
+    background-color: var(--surface-color);
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .playlist__title {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+  }
+  
+  .playlist__tracks {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .playlist__track {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    transition: background-color 0.3s ease;
+  }
+  
+  .playlist__track:last-child {
+    border-bottom: none;
+  }
+  
+  .playlist__track:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+  
+  .playlist__track-info {
+    flex-grow: 1;
+  }
+  
+  .playlist__track-title {
+    font-size: 1.1rem;
+    color: var(--text-color);
+    margin: 0 0 0.5rem 0;
+  }
+  
+  .playlist__track-details {
+    font-size: 0.9rem;
+    color: var(--text-secondary-color);
+    margin: 0;
+  }
+  
+  .playlist__remove-button {
+    background-color: transparent;
+    color: var(--secondary-color);
+    border: 1px solid var(--secondary-color);
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .playlist__remove-button:hover {
+    background-color: var(--secondary-color);
+    color: white;
+  }
+  
+  .playlist__save-button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+    width: 100%;
+  }
+  
+  .playlist__save-button:hover {
+    background-color: #1ed760;
+  }
+  
+  .playlist__empty {
+    color: var(--text-secondary-color);
+    text-align: center;
+    font-style: italic;
+  }
+  
+  @media (max-width: 768px) {
+    .playlist__track {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .playlist__remove-button {
+      margin-top: 1rem;
+      align-self: flex-end;
+    }
+  }
