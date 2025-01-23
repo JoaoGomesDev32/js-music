@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import SearchBar from './components/SearchBar';
 import TrackList from './components/TrackList';
 import Playlist from './components/Playlist';
+import './App.css';
 
 
 const App: React.FC = () => {
@@ -63,11 +64,30 @@ const App: React.FC = () => {
   };
 
   return (
-    <div>
-      <h1>Jammming com Deezer</h1>
-      <SearchBar onSearch={handleSearch} />
-      <TrackList tracks={tracks} onAdd={handleAddToPlaylist} />
-      <Playlist tracks={playlist} onRemove={handleRemoveFromPlaylist} onSave={savePlaylist} />
+    <div className="container mt-4">
+      <header className="text-center mb-4">
+        <h1 className="display-4">JS Music</h1>
+      </header>
+      <div className="row">
+        {/* Search Bar */}
+        <div className="col-12 col-md-4 mb-4">
+          <div className="p-3 shadow bg-white rounded">
+            <SearchBar onSearch={handleSearch} />
+          </div>
+        </div>
+        {/* Track List */}
+        <div className="col-12 col-md-4 mb-4">
+          <div className="p-3 shadow bg-white rounded">
+            <TrackList tracks={tracks} onAdd={handleAddToPlaylist} />
+          </div>
+        </div>
+        {/* Playlist */}
+        <div className="col-12 col-md-4 mb-4">
+          <div className="p-3 shadow bg-white rounded">
+            <Playlist tracks={playlist} onRemove={handleRemoveFromPlaylist} onSave={savePlaylist} />
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
