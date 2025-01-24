@@ -1,6 +1,5 @@
 import React from 'react';
 import './TrackList.css';
-// import { Box, List, ListItem, ListItemText, Button } from '@mui/material';
 
 interface TrackListProps {
   tracks: Track[];

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './SearchBar.css';
-// import { Box, TextField, Button } from '@mui/material';
 
 interface SearchBarProps {
   onSearch: (query: string) => void;
@@ -20,6 +19,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
       handleSearch();
     }
   };
+
   return (
     <div className="search-bar">
       <input
@@ -36,6 +36,5 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
     </div>
   );
 };
-
 
 export default SearchBar;
