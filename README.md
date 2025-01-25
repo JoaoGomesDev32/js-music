@@ -2,7 +2,7 @@
 
 JS Music é uma aplicação web moderna para buscar músicas no Deezer, criar playlists personalizadas e salvá-las no localStorage para acesso posterior.
 
-## 🚀 Funcionalidades
+## Funcionalidades
 
 - 🔍 **Busca de Músicas**: Pesquise suas músicas favoritas no Deezer.
 - ➕ **Adicionar à Playlist**: Adicione músicas à sua playlist personalizada.
@@ -10,14 +10,13 @@ JS Music é uma aplicação web moderna para buscar músicas no Deezer, criar pl
 - 🗑️ **Remover da Playlist**: Remova músicas da sua playlist.
 - 📱 **Responsivo**: Interface amigável e responsiva para todos os dispositivos.
 
-## 🛠️ Tecnologias Utilizadas
-
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
 - **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
 - **CSS**: Estilização moderna e responsiva.
 - **Deezer API**: Para busca de músicas.
-- [Vite](https://vitejs.dev/) - Ferramenta de construção que visa fornecer uma experiência de desenvolvimento mais rápida
-- [Material-UI](https://mui.com/) - Biblioteca de componentes React para um desenvolvimento mais rápido e fácil
+- **Node.js**: Servidor para buscar músicas na API do Deezer.
+- **Express**: Framework para Node.js.
+- **Axios**: Cliente HTTP para fazer requisições à API do Deezer.
 
 ## Instalação
 
@@ -39,12 +38,17 @@ Siga os passos abaixo para rodar o projeto localmente:
     npm start
     ```
 
-4. Acesse a aplicação em seu navegador:
+4. Inicie o servidor para buscar músicas na API do Deezer:
+    ```bash
+    node server.js
+    ```
+
+5. Acesse a aplicação em seu navegador:
     ```
     http://localhost:3000
     ```
 
-## 📚 Estrutura do Projeto
+## Estrutura do Projeto
 
 ```plaintext
 js-music/
@@ -64,9 +68,9 @@ js-music/
 │   ├── App.css
 │   ├── index.tsx
 │   └── ...
+├── server.js
 ├── package.json
 └── README.md
-
 
 ## 🤝 Contribuindo
 
