@@ -1,30 +1,31 @@
 # JS Music 🎵
 
-JS Music é uma aplicação web moderna para buscar músicas no Deezer, criar playlists personalizadas e salvá-las no localStorage para acesso posterior.
+JS Music é uma aplicação web moderna para descobrir, pesquisar e criar playlists personalizadas com suas músicas favoritas diretamente do Deezer. Salve suas playlists para acessá-las quando desejar!
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
 - 🔍 **Busca de Músicas**: Pesquise suas músicas favoritas no Deezer.
 - ➕ **Adicionar à Playlist**: Adicione músicas à sua playlist personalizada.
 - 💾 **Salvar Playlist**: Salve sua playlist no localStorage para não perder suas músicas.
-- 🗑️ **Remover da Playlist**: Remova músicas da sua playlist.
-- 📱 **Responsivo**: Interface amigável e responsiva para todos os dispositivos.
+- 🗑️ **Remover da Playlist**: Remova músicas da sua playlist a qualquer momento.
+- 📱 **Responsividade**: Interface otimizada para todos os dispositivos, oferecendo uma experiência de usuário fluida.
+
+## 🛠️ Tecnologias Utilizadas
 
 - **React**: Biblioteca JavaScript para construção de interfaces de usuário.
-- **TypeScript**: Superset do JavaScript que adiciona tipagem estática.
-- **CSS**: Estilização moderna e responsiva.
-- **Deezer API**: Para busca de músicas.
-- **Node.js**: Servidor para buscar músicas na API do Deezer.
-- **Express**: Framework para Node.js.
-- **Axios**: Cliente HTTP para fazer requisições à API do Deezer.
+- **TypeScript**: Superset do JavaScript que adiciona tipagem estática, tornando o código mais seguro e fácil de manter.
+- **CSS**: Estilos modernos com foco em responsividade e design clean.
+- **Deezer API**: Para buscar músicas diretamente da plataforma Deezer.
+- **Node.js & Express**: Servidor backend para interagir com a API do Deezer e manipular os dados.
+- **Axios**: Cliente HTTP para realizar requisições à API do Deezer.
 
-## Instalação
+## 💻 Instalação
 
 Siga os passos abaixo para rodar o projeto localmente:
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/seu-usuario/js-music.git
+    git clone https://github.com/JoaoGomesDev32/js-music.git
     cd js-music
     ```
 
@@ -33,12 +34,12 @@ Siga os passos abaixo para rodar o projeto localmente:
     npm install
     ```
 
-3. Inicie o servidor de desenvolvimento:
+3. Inicie o servidor frontend:
     ```bash
     npm start
     ```
 
-4. Inicie o servidor para buscar músicas na API do Deezer:
+4. Inicie o servidor backend para buscar músicas na API do Deezer:
     ```bash
     node server.js
     ```
@@ -48,7 +49,7 @@ Siga os passos abaixo para rodar o projeto localmente:
     http://localhost:3000
     ```
 
-## Estrutura do Projeto
+## 📂 Estrutura do Projeto
 
 ```plaintext
 js-music/
@@ -66,6 +67,7 @@ js-music/
 │   │   └── ...
 │   ├── App.tsx
 │   ├── App.css
+│   ├── colors.css
 │   ├── index.tsx
 │   └── ...
 ├── server.js
@@ -74,22 +76,23 @@ js-music/
 
 ## 🤝 Contribuindo
 
-Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
+Contribuições são bem-vindas! Se você quiser melhorar o projeto, basta abrir uma issue ou um pull request.
 
-## 📝 Licença
+## 📄 Licença
 
-Este projeto está licenciado sob a Licença MIT - veja o arquivo [LICENSE.md](LICENSE.md) para detalhes.
+Este projeto está licenciado sob a Licença MIT - veja o arquivo LICENSE.md para mais detalhes.
 
-Contato
-Nome: João Silva
-Email: joaogomesdev32@gmail.com
-GitHub: [https://github.com/joaogomesdev32]
+## 📬 Contato
+
+João Silva
+- GitHub: https://github.com/JoaoGomesDev32
+- Email: joaogomesdev32@gmail.com
 
 ## 👏 Agradecimentos
 
-- Agradecimento à comunidade open-source por todas as ferramentas e bibliotecas incríveis
-- Inspirado por aplicativos de música como Spotify e Apple Music
+- Agradecimentos à comunidade open-source por fornecer ferramentas incríveis para tornar este projeto possível.
+- Inspirado em plataformas de música como Spotify e Apple Music.
 
 ---
 
-Desenvolvido com ❤️ por [João Silva](https://github.com/joaogomesdev32)
+Desenvolvido com ❤️ por João Silva
