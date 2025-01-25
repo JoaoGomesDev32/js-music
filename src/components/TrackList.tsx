@@ -9,7 +9,6 @@ interface TrackListProps {
 const TrackList: React.FC<TrackListProps> = ({ tracks, onAdd }) => {
   return (
     <div className="track-list">
-      <h2>Resultados da Pesquisa</h2>
       {tracks.length > 0 ? (
         <ul className="track-list__items">
           {tracks.map((track) => (

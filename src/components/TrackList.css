@@ -1,14 +1,16 @@
+@import '../colors.css';
+
 .track-list {
-  padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  border-radius: 12px;
+  background-color: var(--primary-light);
+  color: var(--text-color);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
 .track-list__items {
   list-style: none;
   padding: 0;
-  margin: 0;
 }
 
 .track-list__item {
@@ -16,40 +18,24 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  border-bottom: 1px solid #ddd;
+  margin-bottom: 10px;
+  border-bottom: 1px solid var(--primary-light);
 }
 
 .track-list__info {
   flex-grow: 1;
 }
 
-.track-list__title {
-  font-size: 18px;
-  margin: 0;
-  color: #333;
-}
-
-.track-list__details {
-  font-size: 14px;
-  color: #666;
-}
-
 .track-list__button {
-  background-color: #4caf50;
-  color: white;
+  background-color: var(--secondary-light);
+  color: var(--text-color);
   border: none;
-  padding: 8px 12px;
-  border-radius: 4px;
+  border-radius: 8px;
+  padding: 6px 12px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  font-size: 16px;
 }
 
 .track-list__button:hover {
-  background-color: #45a049;
-}
-
-.track-list__empty {
-  font-size: 16px;
-  color: #666;
-  text-align: center;
+  background-color: var(--secondary-dark);
 }

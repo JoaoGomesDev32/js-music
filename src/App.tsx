@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import TrackList from "./components/TrackList";
 import Playlist from "./components/Playlist";
+import Header from "./components/Header";
+import Card from "./components/Card";
 import "./App.css";
 
 const App: React.FC = () => {
@@ -45,30 +47,26 @@ const App: React.FC = () => {
 
   return (
     <div className="container mt-4">
-      <header className="text-center mb-4">
-        <h1 className="display-4">JS Music</h1>
-      </header>
-      <div className="row">
-        <div className="col-12 col-md-4 mb-4">
-          <div className="p-3 shadow bg-white rounded">
-            <SearchBar onSearch={handleSearch} />
-          </div>
-        </div>
-        <div className="col-12 col-md-4 mb-4">
-          <div className="p-3 shadow bg-white rounded">
-            <TrackList tracks={tracks} onAdd={handleAddToPlaylist} />
-          </div>
-        </div>
-        <div className="col-12 col-md-4 mb-4">
-          <div className="p-3 shadow bg-white rounded">
-            <Playlist
-              tracks={playlist}
-              onRemove={handleRemoveFromPlaylist}
-              onAddFromStorage={handleAddFromStorage}
-            />
-          </div>
-        </div>
-      </div>
+      <Header />
+      <SearchBar onSearch={handleSearch} />
+      <Card title="Resultados da Pesquisa">
+        {tracks.length > 0 ? (
+          <TrackList tracks={tracks} onAdd={handleAddToPlaylist} />
+        ) : (
+          "Nenhuma música encontrada. Tente uma nova pesquisa!"
+        )}
+      </Card>
+      <Card title="Sua Playlist">
+        {playlist.length > 0 ? (
+          <Playlist
+            tracks={playlist}
+            onRemove={handleRemoveFromPlaylist}
+            onAddFromStorage={handleAddFromStorage}
+          />
+        ) : (
+          "Sua playlist está vazia. Adicione algumas músicas!"
+        )}
+      </Card>
     </div>
   );
 };

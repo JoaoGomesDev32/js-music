@@ -1,8 +1,13 @@
+@import './colors.css';
+
 body {
-  background-color: #f8f9fa;
+  background-color: var(--background-dark);
   font-family: 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
@@ -13,10 +18,10 @@ body {
 
 header {
   text-align: center;
-  background: linear-gradient(90deg, #007bff, #6c63ff);
-  color: white;
+  background: linear-gradient(90deg, var(--primary-light), var(--primary-dark));
+  color: var(--text-color);
   padding: 20px;
-  border-radius: 12px;
+  border-radius: 0px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 

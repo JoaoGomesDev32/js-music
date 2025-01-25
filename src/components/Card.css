@@ -1,0 +1,19 @@
+@import '../colors.css';
+
+.card {
+    padding: 20px;
+    background-color: var(--primary-dark);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .card-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--text-color);
+  }
+  
+  .card-content {
+    font-size: 16px;
+    color: var(--secondary-dark);
+  }

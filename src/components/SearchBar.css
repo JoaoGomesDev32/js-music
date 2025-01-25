@@ -1,3 +1,5 @@
+@import '../colors.css';
+
 .search-bar {
   display: flex;
   gap: 10px;
@@ -5,23 +7,22 @@
 
 .search-input {
   flex-grow: 1;
+  background-color: white;
+  color: var(--text-color);
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ddd;
-  border-radius: 8px;
+  border: 1px solid #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .search-button {
-  background-color: #007bff;
-  color: white;
+  background-color: var(--primary-dark);
   padding: 10px 16px;
-  border: none;
-  border-radius: 8px;
   cursor: pointer;
   font-size: 18px;
 }
 
-.search-button i {
-  margin-right: 5px;
+.search-button:hover {
+  background-color: var(--primary);
 }
+

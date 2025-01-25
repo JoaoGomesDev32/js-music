@@ -42,7 +42,6 @@ const Playlist: React.FC<PlaylistProps> = ({ tracks, onRemove, onAddFromStorage 
 
   return (
     <div className="playlist">
-      <h2 className="playlist__title">Sua Playlist</h2>
       {tracks.length > 0 ? (
         <>
           <ul className="playlist__tracks">

@@ -31,7 +31,7 @@ const SearchBar: React.FC<SearchBarProps> = ({ onSearch }) => {
         onKeyPress={handleKeyPress}
       />
       <button className="search-button" onClick={handleSearch}>
-        <i className="fas fa-search"></i>
+        🔍
       </button>
     </div>
   );
